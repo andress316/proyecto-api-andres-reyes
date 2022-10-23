@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO / API</title>
+    <title>Comparador de bandas según spotify</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -15,19 +15,97 @@
 
 <body class="body">
 
+
+
+  <header>
+      <div class="titulo">
+        <h1>Compara tus bandas según Spotify</h1>
+      </div>
+      <div class="instrucciones">
+        <h5 style="color: #57529e;">Instrucciones:</h5>
+        <ul>
+          <li><strong>1) </strong>Accede a Spotify e ingresa a la página de un artistas</li>
+          <li><strong>2) </strong>Copia el enlace url de los artistas que deseas comparar</li>
+          <li><strong>3) </strong>Presiona el botón "Comparar"</li>
+        </ul>
+      </div>
+</header>
+
+
+
         <main>
-                <input type="text" id="banda1" value="https://open.spotify.com/artist/6H1RjVyNruCmrBEWRbD0VZ">
-                <input type="text" id="banda2" value="https://open.spotify.com/artist/2tRsMl4eGxwoNabM08Dm4I">
-                <input type="text" id="banda3" value="https://open.spotify.com/artist/37MCoi4pcUf9EKsPXeuCqU">
-                <input type="text" id="banda4" value="https://open.spotify.com/artist/0cc6vw3VN8YlIcvr1v7tBL">
-                <input type="text" id="banda5" value="https://open.spotify.com/artist/1w5Kfo2jwwIPruYS2UWh56">
-                <button onclick="fetchData()">
-                  Comparar followers
+            <div>
+              <input type="text" id="banda1" value="https://open.spotify.com/artist/6H1RjVyNruCmrBEWRbD0VZ">
+              <input type="text" id="banda2" value="https://open.spotify.com/artist/2tRsMl4eGxwoNabM08Dm4I">
+              <input type="text" id="banda3" value="https://open.spotify.com/artist/37MCoi4pcUf9EKsPXeuCqU">
+              <input type="text" id="banda4" value="https://open.spotify.com/artist/0cc6vw3VN8YlIcvr1v7tBL">
+              <input type="text" id="banda5" value="https://open.spotify.com/artist/1w5Kfo2jwwIPruYS2UWh56">
+            </div>
+            <div>
+                <button class="button" onclick="fetchData()">
+                Comparar followers
                 </button>
+            </div>
+            <div><h4>Ten paciencia, la respuesta puede demorar...</h4></div>
         </main>
 
 
-<canvas id="myChart" width="400" height="400"></canvas>
+
+        <!-- <div class="grid-layout">
+              
+              <div class="caja">
+                <h5>Def Lepard</h5>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d" alt="alternatetext">
+                <div>Popularidad: <h3 style="color: #88bb25;">12312312</h3></div>
+                <div>Followers: <h3 style="color: #88bb25;">12312312</h3></div>
+              </div>
+
+              <div class="caja">
+                <h5>Def Lepard</h5>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d" alt="alternatetext">
+                <div>Popularidad: <h3 style="color: #88bb25;">12312312</h3></div>
+                <div>Followers: <h3 style="color: #88bb25;">12312312</h3></div>
+              </div>
+
+
+              <div class="caja">
+                <h5>Def Lepard</h5>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d" alt="alternatetext">
+                <div>Popularidad: <h3 style="color: #88bb25;">12312312</h3></div>
+                <div>Followers: <h3 style="color: #88bb25;">12312312</h3></div>
+              </div>
+
+              <div class="caja">
+                <h5>Def Lepard</h5>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d" alt="alternatetext">
+                <div>Popularidad: <h3 style="color: #88bb25;">12312312</h3></div>
+                <div>Followers: <h3 style="color: #88bb25;">12312312</h3></div>
+              </div>
+
+              <div class="caja">
+                <h5>Def Lepard</h5>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb18410be0ab6355af4422763d" alt="alternatetext">
+                <div>Popularidad: <h3 style="color: #88bb25;">12312312</h3></div>
+                <div>Followers: <h3 style="color: #88bb25;">12312312</h3></div>
+              </div>
+              
+     </div> -->
+
+
+        <canvas id="myChart" style="height:20vh; width:78vw; margin-top: 40px;"></canvas>
+       
+
+
+        
+
+
+
+
+
+
+
+
+        
 
 
 

@@ -1,6 +1,75 @@
 .body{
-    background-color: #293948;
+    background-color: #1a1733;
+    color: white;
+    text-align: center;
 }
+
+.titulo{
+  margin-top: 50px;
+}
+
+
+
+ul {
+  list-style-type: none;
+  color:#57529e ;
+ }
+
+ input[type=text] {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background-color: #3c3171;
+  color: white;
+  box-shadow: none;
+  border-color: none;
+  border: none;
+}
+
+input[type=text]:focus {
+  background-color: #88bb25;
+}
+
+.instrucciones{
+  margin-bottom: 50px;
+}
+.button {
+  position: relative;
+  background-color: #88bb25;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 40px 40px;
+  border-radius: 30px;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
 .container {
 
     width: 400px;
@@ -27,73 +96,51 @@
 }
 
 
+.grid-layout{
+  width: 80%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto auto;
+}
+
 
 .caja {
-    background-color: #34475a;
+    background-color: #2a265c;
     color: white;
-    width: fit-content;
-    height: fit-content;
-    padding: 30px;
+    width: 230px;
+    padding: 10px;
     margin: 10px;
+}
 
+img{
+  width: 100px;
+  height: 100px;
+  margin: 20px; 
+}
+
+h3{
+  font-weight: 900;
+}
+
+.grid-layout2{
+  width: 48%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.caja2 {
+  background-color: #2a265c;
+  color: white;
+  width: 190px;
+  padding: 10px;
+  margin: 10px;
 }
 
 
 
-/*sidebar*/
-.sidebar {
-    height: 100%; 
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #00b69a;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #22252a;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #00b69a;
-  }
-  
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+canvas {
+  border: 1px dotted #2a265c;
+  width: 150px;
+
+}

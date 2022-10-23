@@ -76,14 +76,6 @@ async function fetchData () {
         console.log ('Estos son los followers de ',(followers4.artists[0].name), (followers4.artists[0].followers.total));
         console.log ('Estos son los followers de ',(followers5.artists[0].name), (followers5.artists[0].followers.total));
 
-
-
-
-
-
-
-
-
 //Acá comienza el chartjs
     // (() =>{
 
@@ -127,26 +119,6 @@ async function fetchData () {
         });
     
     // })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
